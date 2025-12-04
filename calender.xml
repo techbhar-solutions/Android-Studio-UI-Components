@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <CalendarView
+        android:id="@+id/myCalendar"
+        android:layout_width="380dp"
+        android:layout_height="317dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/calendar_bg"
+        android:focusedMonthDateColor="#ffffff"
+        android:selectedWeekBackgroundColor="#4CAF50"
+        android:unfocusedMonthDateColor="#B0BEC5"
+        android:weekSeparatorLineColor="#00000000"
+        android:weekDayTextAppearance="@style/WeekDayStyle"
+        android:dateTextAppearance="@style/DateStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
