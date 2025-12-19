@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    >
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="text"
+        android:text="Date Of Birth"
+        android:focusable="false"
+        android:clickable="true"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:drawableEnd="@drawable/calender_icon"
+        android:background="@drawable/edittext_red_border"
+        android:drawablePadding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="296dp"
+        android:background="@color/rating_color"
+        android:backgroundTint="@color/rating_color"
+        android:text="Clear"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="384dp"
+        android:backgroundTint="@color/rating_color"
+        android:text="Alert Dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
