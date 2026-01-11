@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+
+    >
+
+
+
+
+
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEF4FF"
+        app:layoutDescription="@xml/scene"
+        >
+         <TextView
+             android:id="@+id/header"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:gravity="center_vertical"
+             android:paddingStart="16dp"
+             android:text="11906- Agra Cantt Express(LDH-NDLS)"
+             android:textStyle="bold"
+             android:textSize="16sp"
+             android:background="#1E74FF"
+             android:textColor="@color/white"
+             />
+
+        <LinearLayout
+            android:id="@+id/trainlist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomSheet"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <LinearLayout
+               android:id="@+id/bottomSheet"
+               android:layout_width="match_parent"
+               android:layout_height="350dp"
+               android:orientation="vertical"
+               android:padding="16dp"
+               android:background="@drawable/rounded_top"
+               >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Hoshiarpur To Agra Cantt."
+               android:textSize="18sp"
+               android:textStyle="bold"
+               />
+               <SeekBar
+                   android:id="@+id/routeProgress"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingVertical="12dp"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="Next Stop" />
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="1dp"
+                       android:text="To Reach"
+                       android:gravity="center"
+                       />
+               </LinearLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@drawable/grabber"
+                   android:layout_marginVertical="8dp"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   >
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Feedback"
+                       />
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Share"
+                       />
+
+               </LinearLayout>
+           </LinearLayout>
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
