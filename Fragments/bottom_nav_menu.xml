@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Home"
+    android:icon="@drawable/outline_add_home"
+    android:id="@+id/homeactivity"
+    />
+
+    <item
+        android:id="@+id/profileactivity"
+        android:icon="@drawable/outline_account"
+        android:title="Profile"
+        />
+</menu>
